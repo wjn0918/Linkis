@@ -10,13 +10,13 @@ eureka:
     hostname: localhost
 #    preferIpAddress: true
   client:
-    register-with-eureka: false
-    fetch-registry: false
-#    serviceUrl:
-#      defaultZone: http://ip:port/eureka/
+#    register-with-eureka: false
+#    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://ip:port/eureka/
 #  server:
 #    enableSelfPreservation: false
-#    enable-self-preservation: false
-#    eviction-interval-timer-in-ms: 3000
-#  server:
-#    response-cache-update-interval-ms: 2000
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 3000
+  server:
+    response-cache-update-interval-ms: 2000
